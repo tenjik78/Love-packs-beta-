@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Packs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec;
+      color: #880e4f;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f06292;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #f8bbd0;
+      padding: 10px;
+      z-index: 10;
+    }
+    nav a {
+      display: block;
+      margin-bottom: 5px;
+      color: #880e4f;
+      text-decoration: none;
+    }
+    .content {
+      padding: 80px 20px 20px 20px;
+      text-align: center;
+    }
+    .warning {
+      background-color: #ffebee;
+      color: red;
+      font-weight: bold;
+      padding: 10px;
+    }
+    .package {
+      background-color: #fff0f5;
+      border: 1px solid #f48fb1;
+      border-radius: 10px;
+      margin: 20px auto;
+      padding: 20px;
+      width: 300px;
+    }
+    .package h2 {
+      color: #ad1457;
+    }
+    .buy-button {
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .methods {
+      display: none;
+      margin-top: 10px;
+    }
+    .logo {
+      margin: 10px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #f8bbd0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #880e4f;
+    }
+    .image-placeholder {
+      height: 150px;
+      background-color: #fce4ec;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ad1457;
+      font-size: 1.1em;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎁🐰</div>
+    <h1>Love Packs</h1>
+  </header>
+  <nav>
+    <a href="#ajustes">Ajustes</a>
+    <a href="#cuenta">Cuenta</a>
+    <a href="#paquetes">Paquetes</a>
+  </nav>
+  <div class="warning">ADVERTENCIA: Esta página es solo para mayores de 18 años.</div>
+  <div class="content" id="paquetes">
+    <div class="image-placeholder">(Aquí va una imagen)</div>
+
+    <!-- Paquete 10 USD -->
+    <div class="package">
+      <h2>Paquete de 10 USD de Amor Rosa</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 15 USD -->
+    <div class="package">
+      <h2>Paquete de 15 USD de Pasión Dulce</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 20 USD -->
+    <div class="package">
+      <h2>Paquete de 20 USD de Encanto Secreto</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 25 USD -->
+    <div class="package">
+      <h2>Paquete de 25 USD de Ternura Real</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 30 USD -->
+    <div class="package">
+      <h2>Paquete de 30 USD de Luz Mística</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 35 USD -->
+    <div class="package">
+      <h2>Paquete de 35 USD de Sueño Rojo</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 40 USD -->
+    <div class="package">
+      <h2>Paquete de 40 USD de Fuego Intenso</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 45 USD -->
+    <div class="package">
+      <h2>Paquete de 45 USD de Magia Sedosa</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Paquete 50 USD -->
+    <div class="package">
+      <h2>Paquete de 50 USD de Placer Supremo</h2>
+      <button class="buy-button" onclick="mostrarMetodo(this)">Comprar</button>
+      <div class="methods">
+        <p>Métodos de pago:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>American Express</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    function mostrarMetodo(boton) {
+      const div = boton.nextElementSibling;
+      div.style.display = div.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
